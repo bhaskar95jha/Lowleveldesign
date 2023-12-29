@@ -1,4 +1,4 @@
-package com.example.pattern.creational;
+package com.example.pattern.creational.Singleton;
 
 import java.util.UUID;
 
