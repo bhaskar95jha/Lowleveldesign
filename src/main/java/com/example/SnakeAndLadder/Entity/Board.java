@@ -44,7 +44,10 @@ public class Board {
 
         while(numberOfLadders > 0) {
             int ladderStart = ThreadLocalRandom.current().nextInt(1,cells.length*cells.length-1);
-            int ladderEnd = ThreadLocalRandom.current().nextInt(ladderStart,cells.length*cells.length-1);
+            int ladderEnd = ThreadLocalRandom.current().nextInt(1,cells.length*cells.length-1);
+            if(ladderStart >= ladderEnd) {
+                continue;
+            }
 
             Jump ladderObj = new Jump();
             ladderObj.setStart(ladderStart);
