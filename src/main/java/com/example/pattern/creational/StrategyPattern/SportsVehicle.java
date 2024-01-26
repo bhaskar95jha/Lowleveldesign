@@ -5,6 +5,7 @@ import com.example.pattern.creational.StrategyPattern.strategy.SportsDriveStrate
 
 public class SportsVehicle extends Vehicle{
 
+
     SportsVehicle() {
         super(new SportsDriveStrategy());
     }
